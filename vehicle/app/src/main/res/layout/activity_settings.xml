@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0B275">
+
+    <Button
+        android:id="@+id/btn_setngs"
+        android:layout_width="412dp"
+        android:layout_height="71dp"
+        android:background="@color/white"
+        android:text="Settings"
+        android:textAlignment="textStart"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="276dp"
+        android:background="#E0B275"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_setngs">
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Context"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_contextinfo"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Language,Location" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Notifications"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_notificationinfo"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Push Notification,Follow Notification" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_others"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Others"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_othersinfo"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Update,Cache" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Version"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_versioninfo"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="version: 1.0" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="409dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:text="About Us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="401dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
